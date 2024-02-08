@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+        }
+        video {
+            width: 120%;
+            height: auto;
+   }
+        .try-again-button {
+            padding: 15px 30px; /* increased padding for bigger button */
+            font-size: 20px; /* increased font size */
+            background-color: red;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block; /* allows centering */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video controls autoplay>
+                <source src="scream.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button class="try-again-button" onclick="window.location.href='main.html'">prova ancora?</button>
+    </div>
+</body>
+</html>

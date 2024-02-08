@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        /* Reset default styles and set background color */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("firstPage.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* Center content vertically and horizontally */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        /* Style for heading */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        /* Style for form */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Style for labels */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        /* Style for submit buttons */
+        input[type="submit"] {
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 22px;
+            margin: 0 10px;
+            border: none;
+        }
+        /* Style for 'Yes' button */
+        input[type="submit"][name="yes"] {
+            background-color: #b8b8b8; /* Green */
+            color: white;
+        }
+        /* Style for 'No' button */
+        input[type="submit"][name="no"] {
+            background-color: #b8b8b8; /* Green */
+            color: white;
+        }
+        /* Hover effect for 'No' button */
+        input[type="submit"][name="no"]:hover {
+            transform: scale(1.1);
+        }
+        /* Hover effect for 'Yes' button */
+        input[type="submit"][name="yes"]:hover {
+            transform: scale(1.1);
+        }
+        /* Flexbox styles for button container */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* Add spacing between buttons */
+        .button-container input[type="submit"] {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>ei... ho una domanda per te</h1>
+            <!-- Form for Yes and No buttons -->
+            <form action="valentine.html" method="POST">
+                <div class="button-container">
+                    <input type="submit" name="yes" value="dimmi">
+                    <input type="submit" name="no" value="ma che vuoi">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
